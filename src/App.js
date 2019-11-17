@@ -2,8 +2,21 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Person from"./Person";
+import Table from "./Table";
 
 function App() {
+  const characters = [
+    {
+        name:"Charlie",
+        age: "23",
+        job:"Developer"
+    },
+    {
+        name:"Davie",
+        age: "29",
+        job:"Designer"
+    }
+  ] 
   return (
     <div className="App">
       <header className="App-header">
@@ -11,7 +24,10 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <h1>{ Person }</h1>
+        <div className="container">
+          <Table characterData={characters}/>
+
+        </div>
       </header>
     </div>
   );

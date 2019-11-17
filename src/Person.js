@@ -1,9 +1,14 @@
-import React from "react";
+import React, {Component} from "react";
 
-export default class Person extends React.Component {
+class Person extends Component {
     render() {
         return (
-          <h2>Hello Person</h2>  
+            <div>
+                <h2>Hello Person</h2>
+            </div>
+            
         );
     }
 }
+
+export default Person
